@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    box-sizing: border-box;
+}
+
+
+
+/*---------back to top button----------*/
+
+#back-to-top {
+    position: fixed;           
+    bottom: 40px;               
+    right: 10px;                  
+    background-color: #acaaaa;     
+    color: black;                
+    border: none;
+    padding: 15px 20px;           
+    border-radius: 50px;        
+    cursor: pointer;             
+    font-size: 20px;             
+    transition: all 0.3s ease;    
+    display: none;               
+    z-index: 1000;               
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+   
+}
+
+#back-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#back-to-top:hover {
+    background-color: #444;       
+    transform: scale(1.1);       
+}
+
+/*------------------------floating-menu--------------------------*/
+
+.floating-menu {
+    direction: rtl;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+.floating-menu a{
+    text-decoration: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #cecece;
+    color: black;
+    padding: 8px;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+    width: 50px; 
+    overflow: hidden;
+}
+
+.menu-item .icon i{
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.menu-item .text {
+    white-space: nowrap;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin-right: 40px;
+}
+
+.menu-item:hover {
+    width: 200px; 
+}
+
+.menu-item:hover .text {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+#sbs {
+    padding-top: 100px; 
+    margin-top: -100px; 
+}
+
+#ps {
+    padding-top: 100px; 
+    margin-top: -100px; 
+}
+
+#acs {
+    padding-top: 100px; 
+    margin-top: -100px; 
+}
+
+#ar {
+    padding-top: 100px; 
+    margin-top: -100px; 
+}
+

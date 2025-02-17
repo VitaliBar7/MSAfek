@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/main.js" defer></script>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/mediaQuery2k.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <title>Megastore Afek | Home</title>
+</head>
+<body>
+    <button id="back-to-top" title="Back to Top">&#8679;</button>
+    <div class="sticky-header">
+        <header>
+            <logo><a href="home.html"><img src="image/logo.png" alt="Logo"></a></logo>
+            <nav class="navbar">
+                <ul>
+                    <li><a id="nav-Home" href="home.html">Home</a></li>
+                    <li><a id="nav-tech" href="">Technology</a></li>
+                    <li><a id="nav-services" href="">Services</a></li>
+                    <li><a id='nav-partners' href="#">Partners</a></li>
+                    <li><a id="nav-costumers" href="#">Costumers</a></li>
+                </ul>
+            </nav>
+            <div class="container-lan-con">
+                <div class="language-container">
+                    <div class="language-icon" onclick="toggleDropdown()">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" onclick="changeLanguage('he')">עברית</a>
+                        <a href="#" onclick="changeLanguage('en')">English</a>
+                        <a href="#" onclick="changeLanguage('ru')">Русский</a>
+                    </div>
+                </div>
+                    <div class="navbar">
+                        <ul>
+                            <li ><a id="nav-cu" style="margin-right: 20px;" href="contactUs.html">Contact us</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        <nav-drop-down-Technology class="navbar-drop">
+            <div class="flex-container-row">
+                <div class="flex-container technology-height">
+                    <div class="box" style="font-size: 23px;">
+                        <a id="nav-tech-2" href="technology.html"><b>Technology</b></a>
+                    </div>
+                    <hr style="margin-bottom: 20px;">
+                    <div class="box">
+                        <a href="technology.html#sbs">System box shuttle</a>
+                    </div>
+                    <div class="box">
+                        <a href="technology.html#ps">Pallet Shuttle</a>
+                    </div>
+                    <div class="box">
+                        <a href="technology.html#acs">Automated Conveyor system</a>
+                    </div>
+                    <div class="box">
+                        <a href="technology.html#ar">AGV Robots</a>
+                    </div>
+                </div>
+            </div>
+        </nav-drop-down-Technology>
+        <nav-drop-down-services class="navbar-drop">
+            <div class="flex-container-row">
+                <div class="flex-container">
+                    <div class="box" style="font-size: 23px;">
+                        <a href="service.html"><b>Service</b></a>
+                    </div>
+                    <hr style="margin-bottom: 20px;">
+                    <div class="box">
+                        <a href="#">Automated Conveyor system</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">AGV Robots</a>
+                    </div>
+                </div>
+            </div>
+        </nav-drop-down-services>
+    </div>
+    <section>
+        <div class="floating-menu">
+            <a href="contactUs.html">
+                <div class="menu-item">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">Contact us</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="container-setp-1">
+            <div class="container-setp-1-img ">
+                <img  src="image/home/IMG_1817.jpg" alt="Warehouse">
+                <div class="caption">
+                    <div class="caption-content">
+                        <div  class="caption-text"><p id="content-tech-body-1">Technology</p><p id="content-tech-body-2">Empower Logistics</p></div>
+                        <a href="technology.html" class="button-img-1" style="text-decoration: none; color: black;">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+            <div class="container-setp-1">
+                <div class="container-setp-2-img">
+                    <img src="image/home/IMG_1855.jpg" alt="Warehouse">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div  class="caption-text"><p style="font-size: 70px;" id="content-service-body">Service</p></div>
+                            <a href="service.html" class="button-img-1" style="text-decoration: none; color: black;">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3 id="foo-au-h">About Us</h3>
+                <p id="content-foo" >We are a modern company delivering high-quality products worldwide.</p>
+            </div>
+            <div class="footer-section links">
+                <h3 id="foo-ql-h">Quick Links</h3>
+                <ul>
+                    <li><a id="foo-Home" href="home.html">Home</a></li>
+                    <li><a id="foo-tech" href="technology.html">Technology</a></li>
+                    <li><a id="foo-services" href="service.html">Services</a></li>
+                    <li><a id="foo-partners" href="#">Partners</a></li>
+                    <li><a id="foo-costumers" href="#">Costumers</a></li>
+                    <li><a id="foo-au" href="home.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3 id="foo-cu">Contact Us</h3>
+                <ul>
+                    <li><a id="foo-cu-2" href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2021 Megastore systems Afek <p id="foo-arr">All Rights Reserved</p></p>
+        </div>
+    </footer>
+</body>
+</html>

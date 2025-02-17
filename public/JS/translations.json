@@ -1,0 +1,59 @@
+
+{
+    "he": {
+        "nav-Home": "דף הבית",
+        "nav-tech": "טכנולוגיה",
+        "nav-services": "שירותים",
+        "nav-partners":"שותפים",
+        "nav-costumers":"לקוחות",
+        "nav-cu":"צור קשר",
+        "foo-au-h":"עלינו",
+        "foo-au": "עלינו",
+        "content-tech-body-1": "הטכנולוגיה",
+        "content-tech-body-2": "מעצימה את הלוגיסטיקה",
+        "content-foo": "אנחנו חברה מודרנית המספקת מוצרים באיכות גבוהה ברחבי העולם.",
+        "content-service-body": "שירותים",
+        "foo-ql-h": "קישורים מהירים",
+        "foo-Home": "דף הבית",
+        "foo-tech": "טכנולוגיה",
+        "foo-services": "שירותים",
+        "foo-partners": "שותפים",
+        "foo-costumers": "לקוחות",
+        "foo-cu": "צור קשר",
+        "foo-cu-2": "צור קשר",
+        "foo-arr": "כל הזכויות שמורות",
+        "nav-tech-2": "טכנולוגיה",
+        "contact-us": "צור קשר",
+        "contact-us-send": "שלח"
+    },
+    "en": {
+        "nav-Home": "Home",
+        "nav-tech": "Technology",
+        "nav-services": "Services",
+        "nav-partners":"Partners",
+        "nav-costumers":"Costumers",
+        "nav-cu":"Contact Us",
+        "foo-au-h":"About Us",
+        "foo-au": "About Us",
+        "content-tech-body-1": "Technology",
+        "content-tech-body-2": "Empower Logistics",
+        "content-foo": "We are a modern company delivering high-quality products worldwide.",
+        "content-service-body": "Service",
+        "foo-ql-h": "Quick Links",
+        "foo-Home": "Home",
+        "foo-tech": "Technology",
+        "foo-services": "Services",
+        "foo-partners": "Partners",
+        "foo-costumers": "Costumers",
+        "foo-cu": "Contact Us",
+        "foo-cu-2": "Contact Us",
+        "foo-arr": "All Rights Reserved",
+        "nav-tech-2": "Technology",
+        "contact-us": "Contact-Us",
+        "contact-us-send": "Send"
+
+    },
+    "ru": {
+        "nav-Home": "домашняя страница"
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/email_send.js" defer></script>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/mediaQuery2k.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <script src="JS/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <link rel="stylesheet" href="CSS/contact-us.css">
+    <title>Megastore Afek | Contact Us</title>
+</head>
+<body>
+    <button id="back-to-top" title="Back to Top">&#8679;</button>
+    <div class="sticky-header">
+        <header>
+            <logo><a href="home.html"><img src="image/logo.png" alt="Logo"></a></logo>
+            <nav class="navbar">
+                <ul>
+                    <li><a id="nav-Home" href="home.html">Home</a></li>
+                    <li><a id="nav-tech" href="">Technology</a></li>
+                    <li><a id="nav-services" href="#">Services</a></li>
+                    <li><a id='nav-partners' href="#">Partners</a></li>
+                    <li><a id="nav-costumers" href="#">Costumers</a></li>
+                </ul>
+            </nav>
+            <div class="container-lan-con">
+                <div class="language-container">
+                    <div class="language-icon" onclick="toggleDropdown()">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" onclick="changeLanguage('he')">עברית</a>
+                        <a href="#" onclick="changeLanguage('en')">English</a>
+                        <a href="#" onclick="changeLanguage('ru')">Русский</a>
+                    </div>
+                </div>
+                    <div class="navbar">
+                        <ul>
+                            <li ><a id="nav-cu" style="margin-right: 20px;" href="contactUs.html">Contact us</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        <nav-drop-down-Technology class="navbar-drop">
+            <div class="flex-container-row">
+                <div class="flex-container technology-height">
+                    <div class="box" style="font-size: 23px;">
+                        <a href="technology.html"><b>Technology</b></a>
+                    </div>
+                    <hr style="margin-bottom: 20px;">
+                    <div class="box">
+                        <a href="#">System box shuttle</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">Pallet Shuttle</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">Automated Conveyor system</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">AGV Robots</a>
+                    </div>
+                </div>
+            </div>
+        </nav-drop-down-Technology>
+        <nav-drop-down-services class="navbar-drop">
+            <div class="flex-container-row">
+                <div class="flex-container">
+                    <div class="box" style="font-size: 23px;">
+                        <a href="service.html"><b>Service</b></a>
+                    </div>
+                    <hr style="margin-bottom: 20px;">
+                    <div class="box">
+                        <a href="#">Automated Conveyor system</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">AGV Robots</a>
+                    </div>
+                </div>
+            </div>
+        </nav-drop-down-services>
+    </div>
+    <div class="container">
+        <h2 id="contact-us">Contact Us</h2>
+        <form id="contact-form">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+            <label for="message"></label>
+            <textarea id="message" name="message" required placeholder="Message"></textarea>
+            <button id="contact-us-send" class="button-sub" type="submit">Send</button>
+        </form>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3 id="foo-au-h">About Us</h3>
+                <p id="content-foo" >We are a modern company delivering high-quality products worldwide.</p>
+            </div>
+            <div class="footer-section links">
+                <h3 id="foo-ql-h">Quick Links</h3>
+                <ul>
+                    <li><a id="foo-Home" href="home.html">Home</a></li>
+                    <li><a id="foo-tech" href="technology.html">Technology</a></li>
+                    <li><a id="foo-services" href="service.html">Services</a></li>
+                    <li><a id="foo-partners" href="#">Partners</a></li>
+                    <li><a id="foo-costumers" href="#">Costumers</a></li>
+                    <li><a id="foo-au" href="home.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2021 Megastore systems Afek <p id="foo-arr">All Rights Reserved</p></p>
+        </div>
+    </footer>
+</html>
+</body>
+</html>

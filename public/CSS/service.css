@@ -1,0 +1,37 @@
+.container-service-1 {
+    width: 95%; 
+    max-width: 1800px; 
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.image-box {
+    width: 30%; 
+}
+
+.image-box img {
+    width: 100%; 
+    height: auto;
+    display: block;  
+
+@media screen and (max-width: 1024px) {
+    .container-service-1 {
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    
+    .image-box {
+        width: 45%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-box {
+        width: 100%;
+    }
+}
+}
