@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let translations = {}; 
 
 function loadTranslations() {
-    fetch("/public/JS/translations.json")
+    fetch("/JS/translations.json")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
