@@ -109,3 +109,85 @@
     font-size: 1.25rem;
   }
 }
+
+
+/*-------------------------------------------For phone--------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  /* התאמה טובה יותר של הקונטיינרים */
+  .container-setp-1,
+  .container-setp-2 {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+  }
+
+  .container-setp-1-img,
+  .container-setp-2-img {
+      width: 100%;
+      position: relative;
+  }
+
+  /* התאמת התמונות כך שלא ייחתכו */
+  .container-setp-1-img img,
+  .container-setp-2-img img {
+      width: 100%;
+      height: auto;
+      max-height: 60vh;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 5%; /* קרוב יותר לתחתית */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* מצמצם מעט את הרוחב */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3); /* רקע כהה אך פחות אטום */
+    padding: 5px 8px; /* פחות ריווח */
+    border-radius: 3px; /* רדיוס קטן יותר */
+}
+
+/* התאמת הכיתוב */
+.caption-text {
+    font-size: clamp(16px, 3.5vw, 32px); /* גודל מעט קטן יותר */
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* התאמת כפתור "Learn More" */
+.button-img-1 {
+    font-size: 1rem; /* טיפה קטן יותר */
+    padding: 8px 16px;
+    max-width: 180px; /* כפתור קטן יותר */
+    margin: 5px auto 0;
+    border: 1px solid white; /* הדגשה קלה למסגרת */
+}
+
+.button-img-1:hover {
+    background-color: #a62828;
+    color: white;
+}
+
+/* סידור אייקון המייל */
+.email-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-icon img {
+    width: 18px;
+    height: 18px;
+}
+}
+

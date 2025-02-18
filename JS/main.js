@@ -1,3 +1,5 @@
+
+
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     header.classList.toggle('scrolled', window.scrollY > 50);
@@ -161,3 +163,42 @@ document.addEventListener("click", function(event) {
         dropdown.classList.remove("show");
     }
 });
+
+
+/*-------------------------------------------For phone--------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+    const menuLinks = document.querySelectorAll(".navbar a"); // כל הלינקים שבתוך הניווט
+
+    // פונקציה לפתיחה וסגירה של התפריט
+    function toggleMenu() {
+        navbar.classList.toggle("active");
+    }
+
+    // פתיחת התפריט בלחיצה על ההמבורגר
+    menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation(); // מונע מהקליק לסגור את התפריט מיד
+        toggleMenu();
+    });
+
+    // סגירת התפריט בלחיצה על כל לינק בתפריט
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navbar.classList.remove("active"); // סוגר את התפריט
+        });
+    });
+
+    // סגירת התפריט בלחיצה מחוץ לו
+    document.addEventListener("click", function (event) {
+        if (!navbar.contains(event.target) && !menuToggle.contains(event.target)) {
+            navbar.classList.remove("active"); // סוגר את התפריט
+        }
+    });
+});
+
+
+
+
+
+
