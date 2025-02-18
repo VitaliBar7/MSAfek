@@ -238,7 +238,7 @@ logo img{
 
 @media screen and (max-width: 768px) {
 .sticky-header{
-    position: static;
+    position:relative;
 }
 
 
