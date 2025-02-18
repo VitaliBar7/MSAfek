@@ -237,6 +237,11 @@ logo img{
 
 
 @media screen and (max-width: 768px) {
+.sticky-header{
+    position: static;
+}
+
+
     .sticky-header {
         height: auto;
         padding: 5px 10px;
