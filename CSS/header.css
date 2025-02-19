@@ -11,7 +11,6 @@ header {
     color: black;
     display: flex;
     align-items: center;
-    padding: 5px 10px 0 10px;
     background-color: white;
     top: 0;
     transition: background 0.3s ease;
@@ -22,8 +21,8 @@ header {
 }
 
 logo img{
-    height: 60px;
-    margin-left: 20px;
+    height: 140px;
+    margin-top: 5px;
 }
 
 /* -------- Nav Bar -------- */
@@ -237,26 +236,20 @@ logo img{
 
 
 @media screen and (max-width: 768px) {
-.sticky-header{
-    position:relative;
-}
-
-
     .sticky-header {
         height: auto;
-        padding: 5px 10px;
+        position:relative;
     }
 
     header {
         flex-direction: column;
         align-items: center;
-        height: auto;
-        padding: 10px;
+        height: 420px;
     }
 
     logo img {
-        height: 50px;
-        margin-left: 0;
+        height: 290px;
+        margin-top: 0;
     }
 
     .navbar {
@@ -283,8 +276,8 @@ logo img{
     .menu-toggle {
         display: block;
         cursor: pointer;
-        font-size: 24px;
-        padding: 10px;
+        font-size: 40px;
+        margin-bottom: 40px;
     }
 
     .menu-toggle i {
@@ -357,6 +350,11 @@ logo img{
     .language-icon {
         margin-left: 50px;
         margin-top: 10px;
+    }
+
+    .language-icon i{
+        font-size: 33px;
+        margin-bottom: 20px;
     }
 
     .language-dropdown {
