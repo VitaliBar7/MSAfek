@@ -48,12 +48,6 @@
     transform: scale(1.1);       
 }
 
-@media screen and (max-width: 768px){
-    #back-to-top{
-        margin-right: 50px;
-    }
-}
-
 
 /*------------------------floating-menu--------------------------*/
 
