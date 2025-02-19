@@ -50,7 +50,7 @@
     margin-bottom: 35px;
 }
 
-p {
+.animated-text {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
